@@ -13,7 +13,7 @@
    Stay informed: follow @datagrid on Twitter or Like http://facebook.com/datagrids
 
   ***********************************************************************************/
-
+#if !NETCOREAPP
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -116,3 +116,5 @@ namespace Xceed.Wpf.DataGrid
     #endregion DataGridDetailDescription Overrides
   }
 }
+
+#endif

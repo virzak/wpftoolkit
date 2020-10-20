@@ -20,7 +20,9 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
+#if !NETCOREAPP
 using System.Data.Objects.DataClasses;
+#endif
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -137,12 +139,14 @@ namespace Xceed.Wpf.DataGrid
         ( type == typeof( string ) ) );
     }
 
+#if !NETCOREAPP
     public static bool IsEntityObjectLoadable( EntityObject entityObject )
     {
       return
         ( ( entityObject.EntityState & EntityState.Added ) != EntityState.Added ) &&
         ( ( entityObject.EntityState & EntityState.Detached ) != EntityState.Detached );
     }
+#endif
 
     public static bool IsEntityFramework( Type type )
     {
@@ -1460,13 +1464,14 @@ namespace Xceed.Wpf.DataGrid
         bool isEntityKey = false;
         bool allowNull = false;
 
+#if !NETCOREAPP
         EdmScalarPropertyAttribute attribute = propertyDescriptor.Attributes[ typeof( EdmScalarPropertyAttribute ) ] as EdmScalarPropertyAttribute;
-
         if( attribute != null )
         {
           isEntityKey = attribute.EntityKeyProperty;
           allowNull = attribute.IsNullable;
         }
+#endif
 
         string name = propertyDescriptor.Name;
 

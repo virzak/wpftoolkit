@@ -25,14 +25,6 @@ using System;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle( "Xceed Toolkit for WPF - AvalonDock Aero Theme" )]
-[assembly: AssemblyDescription( "This assembly implements the Aero Theme for the AvalonDock layout system." )]
-
-[assembly: AssemblyCompany( "Xceed Software Inc." )]
-[assembly: AssemblyProduct( "Xceed Toolkit for WPF - AvalonDock" )]
-[assembly: AssemblyCopyright( "Copyright (C) Xceed Software Inc. 2007-2016" )]
-
-
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -64,7 +56,7 @@ using System;
 
 #pragma warning disable 1699
 [assembly: AssemblyDelaySign( false )]
-[assembly: AssemblyKeyFile( @"..\..\sn.snk" )]
+[assembly: AssemblyKeyFile( @"..\..\..\sn.snk" )]
 [assembly: AssemblyKeyName( "" )]
 #pragma warning restore 1699
 

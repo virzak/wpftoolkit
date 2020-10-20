@@ -31,13 +31,6 @@ using System.Windows.Markup;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle( "Xceed Toolkit for WPF" )]
-[assembly: AssemblyDescription("This assembly implements various Windows Presentation Framework controls.")]
-
-[assembly: AssemblyCompany("Xceed Software Inc.")]
-[assembly: AssemblyProduct( "Xceed Toolkit for WPF" )]
-[assembly: AssemblyCopyright( "Copyright (C) Xceed Software Inc. 2007-2016" )]
-[assembly: AssemblyCulture( "" )]
 
 
 // Needed to enable xbap scenarios
@@ -113,7 +106,7 @@ using System.Windows.Markup;
 
 #pragma warning disable 1699
 [assembly: AssemblyDelaySign( false )]
-[assembly: AssemblyKeyFile( @"..\..\sn.snk" )]
+[assembly: AssemblyKeyFile( @"..\..\..\sn.snk" )]
 [assembly: AssemblyKeyName( "" )]
 #pragma warning restore 1699
 

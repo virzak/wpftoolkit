@@ -31,13 +31,6 @@ using System.Windows.Markup;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle( "Xceed Toolkit for WPF - DataGrid" )]
-[assembly: AssemblyDescription( "This assembly implements the Xceed.Wpf.DataGrid namespace, a data grid control for the Windows Presentation Framework." )]
-
-[assembly: AssemblyCompany( "Xceed Software Inc." )]
-[assembly: AssemblyProduct( "Xceed Toolkit for WPF - DataGrid" )]
-[assembly: AssemblyCopyright( "Copyright (C) Xceed Software Inc. 2007-2016" )]
-
 
 [assembly: CLSCompliant( true )]
 [assembly: ComVisible( false )]
@@ -75,6 +68,6 @@ using System.Windows.Markup;
 
 #pragma warning disable 1699
 [assembly: AssemblyDelaySign( false )]
-[assembly: AssemblyKeyFile( @"..\..\sn.snk" )]
+[assembly: AssemblyKeyFile( @"..\..\..\sn.snk" )]
 [assembly: AssemblyKeyName( "" )]
 #pragma warning restore 1699

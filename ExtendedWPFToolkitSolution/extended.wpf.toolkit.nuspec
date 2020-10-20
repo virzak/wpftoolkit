@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Extended.Wpf.Toolkit</id>
+    <version>3.1.1</version>
+    <title>Extended WPF Toolkit</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <projectUrl>https://github.com/xceedsoftware/wpftoolkit</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extended WPF Toolkit is the number one collection of WPF controls, components and utilities for creating next generation Windows applications. Provides 47 controls, all offered under the Microsoft Public License for maximum freedom. v3.1.0 provides 37 bug fixes and improvements. Documentation, source, and discussions are hosted on Github at https://github.com/xceedsoftware/wpftoolkit. Check out the Plus Edition to support the project, get more controls and features, and be at least 1 release ahead of the free releases.</description>
+    <summary>Extended WPF Toolkit is the number one collection of WPF controls for creating next-gen Windows apps. v3.1.0 provides 37 bug fixes and improvements.</summary>
+    <releaseNotes>v3.1.0 provides 37 bug fixes and improvements. Released July 11, 2017.</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2010-2017</copyright>
+    <tags>Extended WPF Toolkit</tags>
+
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETCoreApp3.0" />
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="Src\Xceed.Wpf.Toolkit\bin\Release\net40\Xceed.Wpf.Toolkit.dll" target="lib\net40" />
+    <file src="Src\Xceed.Wpf.DataGrid\bin\Release\net40\Xceed.Wpf.DataGrid.dll" target="lib\net40" />
+    <file src="Src\Xceed.Wpf.AvalonDock\bin\Release\net40\Xceed.Wpf.AvalonDock.dll" target="lib\net40" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.Aero\bin\Release\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll" target="lib\net40" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.Metro\bin\Release\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll" target="lib\net40" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.VS2010\bin\Release\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" target="lib\net40" />
+
+    <file src="Src\Xceed.Wpf.Toolkit\bin\Release\netcoreapp3.0\Xceed.Wpf.Toolkit.dll" target="lib\netcoreapp3.0" />
+    <file src="Src\Xceed.Wpf.DataGrid\bin\Release\netcoreapp3.0\Xceed.Wpf.DataGrid.dll" target="lib\netcoreapp3.0" />
+    <file src="Src\Xceed.Wpf.AvalonDock\bin\Release\netcoreapp3.0\Xceed.Wpf.AvalonDock.dll" target="lib\netcoreapp3.0" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.Aero\bin\Release\netcoreapp3.0\Xceed.Wpf.AvalonDock.Themes.Aero.dll" target="lib\netcoreapp3.0" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.Metro\bin\Release\netcoreapp3.0\Xceed.Wpf.AvalonDock.Themes.Metro.dll" target="lib\netcoreapp3.0" />
+    <file src="Src\Xceed.Wpf.AvalonDock.Themes.VS2010\bin\Release\netcoreapp3.0\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" target="lib\netcoreapp3.0" />
+  </files>
+</package>

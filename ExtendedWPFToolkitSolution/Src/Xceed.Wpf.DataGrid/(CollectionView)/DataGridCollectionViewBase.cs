@@ -89,7 +89,7 @@ namespace Xceed.Wpf.DataGrid
       this.PreConstruct();
 
       m_distinctValues = new DistinctValuesDictionary( this );
-      m_autoFilterValues = new ReadOnlyDictionary<string, IList>();
+      m_autoFilterValues = new Xceed.Utils.Collections.ReadOnlyDictionary<string, IList>();
       m_autoFilteredDataGridItemProperties = new ObservableCollection<DataGridItemPropertyBase>();
 
       m_filteredItemProperties = new List<DataGridItemPropertyBase>();
@@ -1759,7 +1759,9 @@ namespace Xceed.Wpf.DataGrid
           && ( propertyType.BaseType.FullName == "System.Data.Objects.DataClasses.RelatedEnd" )
           && ( typeof( IEnumerable ).IsAssignableFrom( propertyInfo.PropertyType ) ) )
         {
-          relations.Add( new EntityDetailDescription( propertyInfo.Name ) );
+#if !NETCOREAPP
+                    relations.Add( new EntityDetailDescription( propertyInfo.Name ) );
+#endif
         }
       }
 
@@ -2565,7 +2567,7 @@ namespace Xceed.Wpf.DataGrid
       this.CreateDefaultCollections( m_parentDetailDescription );
 
       m_autoFilterMode = m_parentDetailDescription.AutoFilterMode;
-      m_autoFilterValues = m_parentDetailDescription.AutoFilterValues as ReadOnlyDictionary<string, IList>;
+      m_autoFilterValues = m_parentDetailDescription.AutoFilterValues as Xceed.Utils.Collections.ReadOnlyDictionary<string, IList>;
       m_autoFilteredDataGridItemProperties = m_parentDetailDescription.AutoFilteredItems;
       m_distinctValuesConstraint = m_parentDetailDescription.DistinctValuesConstraint;
       m_filterCriteriaMode = m_parentDetailDescription.FilterCriteriaMode;
@@ -3605,7 +3607,7 @@ namespace Xceed.Wpf.DataGrid
 
     // Containing a DataGridItemProperty key, ObservableCollection<object> values map
     private DistinctValuesDictionary m_distinctValues;
-    private ReadOnlyDictionary<string, IList> m_autoFilterValues;
+    private Xceed.Utils.Collections.ReadOnlyDictionary<string, IList> m_autoFilterValues;
     private ObservableCollection<DataGridItemPropertyBase> m_autoFilteredDataGridItemProperties;
     private DataGridItemPropertyBase m_excludedItemPropertyFromDistinctValueCalculation;
 
